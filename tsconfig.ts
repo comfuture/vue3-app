@@ -1,4 +1,4 @@
-{
+export default {
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
@@ -9,5 +9,8 @@
     "types": [
       "node"
     ]
+  },
+  "aliases": {
+    "~": __dirname
   }
 }

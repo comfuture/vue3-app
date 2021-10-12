@@ -5,10 +5,8 @@
   </div>
 </template>
 <script setup lang="ts">
-type Data = {
-  name: string,
-  features: string
-}
+import { Data } from '~/server/api/types'
+
 const { data } = await useAsyncData<Data>('data', () => $fetch('/api/hello') as Promise<Data>, {
   pick: ['name', 'features']
 })
