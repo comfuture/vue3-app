@@ -6,6 +6,8 @@
     <div>Hello, {{ namae }}</div>
     <button @click="setName('new world')">setName('new world')</button>
     <button @click="setName('another world')">setName('another world')</button>
+
+    <nuxt-link :to="{name: 'hello'}">goto /hello</nuxt-link>
   </div>
 </template>
 <script setup lang="ts">
