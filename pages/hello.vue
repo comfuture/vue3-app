@@ -5,9 +5,9 @@
   </div>
 </template>
 <script setup lang="ts">
-import { Data } from '~/server/api/types'
+import { Data } from '../server/api/types'
 
-const { data } = await useAsyncData<Data>('data', () => $fetch('/api/hello') as Promise<Data>, {
+const { data } = await useAsyncData('data', () => $fetch('/api/hello') as Promise<Data>, {
   pick: ['name', 'features']
 })
 </script>
